@@ -9,7 +9,7 @@ openmmplumed_header_dir = '@OPENMMPLUMED_HEADER_DIR@'
 openmmplumed_library_dir = '@OPENMMPLUMED_LIBRARY_DIR@'
 
 # setup extra compile and link arguments on Mac
-extra_compile_args = []
+extra_compile_args = ["-D_GLIBCXX_USE_CXX11_ABI=0"]
 extra_link_args = []
 
 if platform.system() == 'Darwin':
